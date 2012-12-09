@@ -1,0 +1,4 @@
+D:\Developpement\AspWeb2012\CoptisBugReport\avifilewrapper_src\aviFileWrapper_src\bin\Debug\AviFile.dll
+D:\Developpement\AspWeb2012\CoptisBugReport\avifilewrapper_src\aviFileWrapper_src\bin\Debug\AviFile.pdb
+D:\Developpement\AspWeb2012\CoptisBugReport\avifilewrapper_src\aviFileWrapper_src\obj\Debug\AviFile.dll
+D:\Developpement\AspWeb2012\CoptisBugReport\avifilewrapper_src\aviFileWrapper_src\obj\Debug\AviFile.pdb
