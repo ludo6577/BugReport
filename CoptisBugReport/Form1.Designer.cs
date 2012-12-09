@@ -56,7 +56,7 @@
             // buttonRecord
             // 
             this.buttonRecord.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonRecord.Location = new System.Drawing.Point(6, 304);
+            this.buttonRecord.Location = new System.Drawing.Point(6, 259);
             this.buttonRecord.Name = "buttonRecord";
             this.buttonRecord.Size = new System.Drawing.Size(189, 33);
             this.buttonRecord.TabIndex = 6;
@@ -68,7 +68,7 @@
             // 
             this.buttonSend.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSend.Enabled = false;
-            this.buttonSend.Location = new System.Drawing.Point(213, 304);
+            this.buttonSend.Location = new System.Drawing.Point(203, 259);
             this.buttonSend.Name = "buttonSend";
             this.buttonSend.Size = new System.Drawing.Size(189, 33);
             this.buttonSend.TabIndex = 7;
@@ -91,7 +91,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxBugName.Location = new System.Drawing.Point(52, 11);
             this.textBoxBugName.Name = "textBoxBugName";
-            this.textBoxBugName.Size = new System.Drawing.Size(343, 20);
+            this.textBoxBugName.Size = new System.Drawing.Size(338, 20);
             this.textBoxBugName.TabIndex = 2;
             this.textBoxBugName.TextChanged += new System.EventHandler(this.Changed);
             // 
@@ -102,7 +102,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBoxDescription.Location = new System.Drawing.Point(11, 112);
             this.richTextBoxDescription.Name = "richTextBoxDescription";
-            this.richTextBoxDescription.Size = new System.Drawing.Size(388, 186);
+            this.richTextBoxDescription.Size = new System.Drawing.Size(379, 141);
             this.richTextBoxDescription.TabIndex = 5;
             this.richTextBoxDescription.Text = "";
             this.richTextBoxDescription.TextChanged += new System.EventHandler(this.Changed);
@@ -131,7 +131,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxPriority.Location = new System.Drawing.Point(52, 37);
             this.textBoxPriority.Name = "textBoxPriority";
-            this.textBoxPriority.Size = new System.Drawing.Size(107, 20);
+            this.textBoxPriority.Size = new System.Drawing.Size(112, 20);
             this.textBoxPriority.TabIndex = 3;
             this.textBoxPriority.TextChanged += new System.EventHandler(this.TextChanged_NumericOnly);
             // 
@@ -155,7 +155,7 @@
             "3 - Minor"});
             this.comboBoxGravity.Location = new System.Drawing.Point(52, 63);
             this.comboBoxGravity.Name = "comboBoxGravity";
-            this.comboBoxGravity.Size = new System.Drawing.Size(107, 21);
+            this.comboBoxGravity.Size = new System.Drawing.Size(112, 21);
             this.comboBoxGravity.TabIndex = 4;
             this.comboBoxGravity.TextChanged += new System.EventHandler(this.Changed);
             // 
@@ -167,7 +167,7 @@
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(452, 384);
+            this.tabControl.Size = new System.Drawing.Size(406, 324);
             this.tabControl.TabIndex = 1;
             // 
             // tabPage1
@@ -185,7 +185,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(405, 340);
+            this.tabPage1.Size = new System.Drawing.Size(398, 298);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Report";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -253,8 +253,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 384);
+            this.ClientSize = new System.Drawing.Size(406, 324);
             this.Controls.Add(this.tabControl);
+            this.MinimumSize = new System.Drawing.Size(422, 363);
             this.Name = "FormBugReport";
             this.Text = "Bug reporter";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormBugReport_FormClosing);

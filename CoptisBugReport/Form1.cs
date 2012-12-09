@@ -108,6 +108,9 @@ namespace CoptisBugReport
                 aviStream = aviManager.AddVideoStream(false, 4, bitmap);
                 aviStream.GetFrameOpen();
 
+                Graphics.FromImage(bitmap).CopyFromScreen(Point.Empty, Point.Empty, Screen.PrimaryScreen.Bounds.Size);
+                aviStream.AddFrame(bitmap);
+
                 //The Recording Thread
                 threadRecorder = new Thread(new ThreadStart(Record));
                 threadRecording = true;
@@ -149,6 +152,7 @@ namespace CoptisBugReport
         {
             try{
                 threadRecording = false;
+
                 aviStream.GetFrameClose();
                // aviStream.Close();
                 aviManager.Close();
