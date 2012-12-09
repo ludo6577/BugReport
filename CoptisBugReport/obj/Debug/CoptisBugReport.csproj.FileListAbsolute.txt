@@ -12,3 +12,6 @@ D:\Developpement\AspWeb2012\CoptisBugReport\CoptisBugReport\obj\Debug\CoptisBugR
 D:\Developpement\AspWeb2012\CoptisBugReport\CoptisBugReport\obj\Debug\CoptisBugReport.pdb
 D:\Developpement\AspWeb2012\CoptisBugReport\CoptisBugReport\bin\Debug\AviFile.dll
 D:\Developpement\AspWeb2012\CoptisBugReport\CoptisBugReport\bin\Debug\AviFile.pdb
+D:\Developpement\Coptis\CoptisBugReport\CoptisBugReport\bin\Debug\CoptisBugReport.exe.config
+D:\Developpement\Coptis\CoptisBugReport\CoptisBugReport\obj\Debug\CoptisBugReport.exe
+D:\Developpement\Coptis\CoptisBugReport\CoptisBugReport\obj\Debug\CoptisBugReport.pdb
