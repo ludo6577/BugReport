@@ -15,3 +15,14 @@ D:\Developpement\AspWeb2012\CoptisBugReport\CoptisBugReport\bin\Debug\AviFile.pd
 D:\Developpement\Coptis\CoptisBugReport\CoptisBugReport\bin\Debug\CoptisBugReport.exe.config
 D:\Developpement\Coptis\CoptisBugReport\CoptisBugReport\obj\Debug\CoptisBugReport.exe
 D:\Developpement\Coptis\CoptisBugReport\CoptisBugReport\obj\Debug\CoptisBugReport.pdb
+D:\Developpement\Coptis\CoptisBugReport\CoptisBugReport\bin\Debug\CoptisBugReport.exe
+D:\Developpement\Coptis\CoptisBugReport\CoptisBugReport\bin\Debug\CoptisBugReport.pdb
+D:\Developpement\Coptis\CoptisBugReport\CoptisBugReport\bin\Debug\AviFile.dll
+D:\Developpement\Coptis\CoptisBugReport\CoptisBugReport\bin\Debug\DShowNET.dll
+D:\Developpement\Coptis\CoptisBugReport\CoptisBugReport\bin\Debug\AviFile.pdb
+D:\Developpement\Coptis\CoptisBugReport\CoptisBugReport\bin\Debug\DirectX.Capture.pdb
+D:\Developpement\Coptis\CoptisBugReport\CoptisBugReport\bin\Debug\DirectX.Capture.xml
+D:\Developpement\Coptis\CoptisBugReport\CoptisBugReport\obj\Debug\CoptisBugReport.csprojResolveAssemblyReference.cache
+D:\Developpement\Coptis\CoptisBugReport\CoptisBugReport\obj\Debug\CoptisBugReport.FormBugReport.resources
+D:\Developpement\Coptis\CoptisBugReport\CoptisBugReport\obj\Debug\CoptisBugReport.Properties.Resources.resources
+D:\Developpement\Coptis\CoptisBugReport\CoptisBugReport\obj\Debug\CoptisBugReport.csproj.GenerateResource.Cache

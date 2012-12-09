@@ -16,7 +16,8 @@ namespace CoptisBugReport
     {
         #region Variables
 
-        private static String VIDEO_FILENAME = @"../videoTest.avi";
+        private static String VIDEO_FILENAME = @"../../../files/videoTest.avi";
+        private static String COPTIS_FILENAME = @"../../../files/Coptis.png";
 
         private AviManager aviManager;
         private VideoStream aviStream;
@@ -24,7 +25,7 @@ namespace CoptisBugReport
 
         private Thread threadRecorder;
         private bool threadRecording;
-        private bool recorded;
+        private bool videoRecorded;
 
         String currentScreen;
 
@@ -102,7 +103,7 @@ namespace CoptisBugReport
                 int ScreenWidth = Screen.PrimaryScreen.Bounds.Width;
                 int ScreenHeight = Screen.PrimaryScreen.Bounds.Height;
                 bitmap = new Bitmap(ScreenWidth, ScreenHeight);
-                Graphics.FromImage(bitmap).DrawImage(Image.FromFile(@"../Coptis.png"), 0, 0, ScreenWidth, ScreenHeight);
+                Graphics.FromImage(bitmap).DrawImage(Image.FromFile(COPTIS_FILENAME), 0, 0, ScreenWidth, ScreenHeight);
 
                 aviManager = new AviManager(fileName, false);
                 aviStream = aviManager.AddVideoStream(false, 4, bitmap);
@@ -114,13 +115,12 @@ namespace CoptisBugReport
                 //The Recording Thread
                 threadRecorder = new Thread(new ThreadStart(Record));
                 threadRecording = true;
-                recorded = true;
                 threadRecorder.Start();
                 return true;
             }
             catch (Exception e)
             {
-                MessageBox.Show("Error occured. Please reload the program:" + Environment.NewLine + e.Message, "Coptis bug reporter");
+                MessageBox.Show("Error occured on begin record. " + Environment.NewLine + "Please reload the program:" + Environment.NewLine + e.Message, "Coptis bug reporter");
                 return false;
             }
         }
@@ -139,7 +139,7 @@ namespace CoptisBugReport
                 }
                 catch (Exception e)
                 {
-                    MessageBox.Show("Error occured. Please reload the program:" + Environment.NewLine + e.Message, "Coptis bug reporter");
+                    //MessageBox.Show("Error occured while recording. " + Environment.NewLine + "Please reload the program:" + Environment.NewLine + e.Message, "Coptis bug reporter");
                 }
             }
         }
@@ -152,6 +152,7 @@ namespace CoptisBugReport
         {
             try{
                 threadRecording = false;
+                videoRecorded = true;
 
                 aviStream.GetFrameClose();
                // aviStream.Close();
@@ -159,7 +160,7 @@ namespace CoptisBugReport
             }
             catch (Exception e)
             {
-                MessageBox.Show("Error occured. Please reload the program:" + Environment.NewLine + e.Message, "Coptis bug reporter");
+                MessageBox.Show("Error occured on stop recording. " + Environment.NewLine + "Please reload the program:" + Environment.NewLine + e.Message, "Coptis bug reporter");
             }
         }
 
@@ -173,7 +174,7 @@ namespace CoptisBugReport
          */ 
         private bool CheckAllowedToSend()
         {
-            if (textBoxBugName.Text != "" && richTextBoxDescription.Text != "" && textBoxPriority.Text != "" && comboBoxGravity.Text != "" && threadRecording==false && recorded==true)
+            if (textBoxBugName.Text != "" && richTextBoxDescription.Text != "" && textBoxPriority.Text != "" && comboBoxGravity.Text != "" && threadRecording==false && videoRecorded==true)
             {
                 buttonSend.Enabled = true;
                 return true;
